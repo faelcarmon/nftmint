@@ -1,0 +1,20 @@
+public class SampleUserImpl implements User 
+{ 
+ 
+    private Hashtable fInfo; 
+ 
+    public SampleUserImpl() { 
+ 
+        fInfo = new Hashtable(); 
+ 
+        setLoginId("guest"); 
+        setFirstName("guest"); 
+        setLastName("guest"); 
+        setPassword ("guest"); 
+        setCreateDate(new Date()); 
+        setActivateDate(new Date()); 
+        fInfo.put("enabled", String.valueOf(true)); 
+        setMiddleName("guest"); 
+        setEmail("guest@email.com"); 
+        setUniqueDeviceId("1231231233"); 
+    } 
